@@ -495,3 +495,7 @@ table h4 {
 .schedule-offset {
   color: #a9b2b9;
 }
+.menu-item:hover {
+  border-bottom: solid 2px white;
+  transition: 0.25s;
+}
