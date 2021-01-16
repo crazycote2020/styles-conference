@@ -215,6 +215,7 @@ a {
 }
 a:hover {
   color: #a9b2b9;
+  transition: 0.25s;
 }
 p a {
   border-bottom: 1px solid #dfe2e5;
@@ -251,6 +252,7 @@ p a {
 .btn-alt:hover {
   background: #fff;
   color: #648880;
+  transition: 0.25s;
 }
 .btn-default {
   border: 0;
@@ -260,6 +262,7 @@ p a {
 }
 .btn-default:hover {
   background: #77a198;
+  transition: 0.25s;
 }
 
 
@@ -337,21 +340,31 @@ p a {
   padding: 22px 80px 66px 80px;
   text-align: center;
 }
+
 .hero h2 {
   font-size: 36px;
 }
+
 .hero p {
   font-size: 24px;
   font-weight: 100;
 }
+
 .teaser a:hover h3 {
   color: #a9b2b9;
+  transition: 0.25s;
 }
+
 .teaser img {
   border-radius: 5px;
   display: block;
   margin-bottom: 22px;
-  max-width: 100%
+  max-width: 100%;
+}
+
+.teaser:hover img {
+  opacity: 0.8;
+  transition: 0.25s;
 }
 
 /*
@@ -495,7 +508,14 @@ table h4 {
 .schedule-offset {
   color: #a9b2b9;
 }
+
+.menu-item {
+  border:#648880;
+}
+
 .menu-item:hover {
   border-bottom: solid 2px white;
+  color:#648880;
   transition: 0.25s;
+  opacity: 1;
 }
