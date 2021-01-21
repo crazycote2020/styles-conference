@@ -212,10 +212,10 @@ em {
 a {
   color: #648880;
   text-decoration: none;
+  transition: 0.25s;
 }
 a:hover {
   color: #a9b2b9;
-  transition: 0.25s;
 }
 p a {
   border-bottom: 1px solid #dfe2e5;
@@ -248,21 +248,21 @@ p a {
 .btn-alt {
   border: 1px solid #fff;
   padding: 10px 30px;
+  transition: 0.25s;
 }
 .btn-alt:hover {
   background: #fff;
   color: #648880;
-  transition: 0.25s;
 }
 .btn-default {
   border: 0;
   background: #648880;
   padding: 11px 30px;
   font-size: 14px;
+  transition: 0.25s;
 }
 .btn-default:hover {
   background: #77a198;
-  transition: 0.25s;
 }
 
 
@@ -360,11 +360,11 @@ p a {
   display: block;
   margin-bottom: 22px;
   max-width: 100%;
+  transition: 0.25s;
 }
 
 .teaser:hover img {
   opacity: 0.8;
-  transition: 0.25s;
 }
 
 /*
@@ -510,12 +510,12 @@ table h4 {
 }
 
 .menu-item {
-  border:#648880;
+  border-bottom: 2px solid transparent;
+  transition: 0.25s;
 }
 
 .menu-item:hover {
-  border-bottom: solid 2px white;
-  color:#648880;
-  transition: 0.25s;
+  border-color: white;
+  color: #648880;
   opacity: 1;
 }
