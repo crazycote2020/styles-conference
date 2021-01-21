@@ -511,7 +511,7 @@ table h4 {
 
 .menu-item {
   border-bottom: 2px solid transparent;
-  transition: 1.25s;
+  transition: 0.25s;
 }
 
 .menu-item:hover {
