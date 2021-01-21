@@ -510,12 +510,12 @@ table h4 {
 }
 
 .menu-item {
-  border: 1px solid transparent;
-  transition: 0.25s;
+  border-bottom: 2px solid transparent;
+  transition: 1.25s;
 }
 
 .menu-item:hover {
-  border-bottom: 2px solid white;
+  border-color: white;
   color: #648880;
   opacity: 1;
 }
