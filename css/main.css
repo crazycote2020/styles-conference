@@ -57,6 +57,8 @@ body {
   background: #293f50;
   color: #888;
   font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  flex-direction: column;
+  display: flex;
 }
 
 /*
@@ -89,7 +91,10 @@ body {
 }
 .col-1-3,
 .col-2-3  {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
   vertical-align: top;
 }
 .col-1-3 {
@@ -116,6 +121,7 @@ body {
 .group {
   clear: both;
   *zoom: 1;
+  display: flex;
 }
 
 /*
@@ -239,8 +245,9 @@ p a {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
   font-weight: 400;
+  justify-content: center;
   letter-spacing: .5px;
   margin: 0;
   text-transform: uppercase;
@@ -274,7 +281,6 @@ p a {
 
 .logo {
   border-top: 4px solid #648880;
-  float: left;
   font-size: 48px;
   font-weight: 100;
   letter-spacing: .5px;
@@ -302,12 +308,15 @@ p a {
 .primary-footer {
   color: #648880;
   font-size: 14px;
+  flex-grow: 1;
   padding-bottom: 44px;
   padding-top: 44px;
+  display: flex;
+  justify-content: flex-end;
 }
 .primary-footer small {
-  float: left;
   font-weight: 400;
+  flex-grow: 1;
 }
 
 /*
@@ -320,7 +329,7 @@ p a {
   text-align: right;
 }
 .nav li {
-  display: inline-block;
+  display: inline-flex;
   margin: 0 10px;
   vertical-align: top;
 }
@@ -518,4 +527,7 @@ table h4 {
   border-color: white;
   color: #648880;
   opacity: 1;
+}
+.menu-bar{
+  flex-direction: column;
 }
