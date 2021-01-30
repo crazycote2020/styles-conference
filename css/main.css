@@ -247,10 +247,12 @@ p a {
   cursor: pointer;
   display: flex;
   font-weight: 400;
+  flex-grow: 1;
   justify-content: center;
   letter-spacing: .5px;
   margin: 0;
   text-transform: uppercase;
+  width: 50%;
 }
 .btn-alt {
   border: 1px solid #fff;
@@ -528,6 +530,12 @@ table h4 {
   color: #648880;
   opacity: 1;
 }
+
 .menu-bar{
   flex-direction: column;
+  margin-left: auto;
+}
+
+.register-button{
+  display: inline-flex;
 }
