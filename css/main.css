@@ -53,7 +53,8 @@ table {
   Пользовательские стили
   ========================================
 */
-html , body {
+body,
+html {
   height: 100%;
 }
 
@@ -85,7 +86,7 @@ body {
   width: 960px;
 }
 
-.grid-2{
+.grid-2 {
   display: flex;
   margin: 0 auto;
   width: 960px;
@@ -127,7 +128,7 @@ body {
 */
 
 .row,
-.row-alt{
+.row-alt {
   min-width: 960px;
 }
 .row {
@@ -149,15 +150,15 @@ body {
 */
 
 h1,
-h2, 
-h3, 
+h2,
+h3,
 h4 {
   color: #648880;
 }
-h1, 
+h1,
 h3,
-h4, 
-h5, 
+h4,
+h5,
 p {
   margin-bottom: 22px;
 }
@@ -243,7 +244,7 @@ p a {
   cursor: pointer;
   display: flex;
   font-weight: 400;
-  flex-grow: 1;
+  flex-grow: 1.0;
   justify-content: center;
   letter-spacing: .5px;
   margin: 0;
@@ -313,7 +314,7 @@ p a {
   padding-top: 44px;
 }
 .primary-footer small {
-  flex-grow: 1;
+  flex-grow: 1.0;
   font-weight: 400;
 }
 
@@ -394,7 +395,7 @@ p a {
   vertical-align: top;
 }
 
-.speaker{
+.speaker {
   display: flex;
 }
 
@@ -533,15 +534,14 @@ table h4 {
   opacity: 1;
 }
 
-.menu-bar{
-  flex-direction: column;
+.menu-bar {
   margin-left: auto;
 }
 
-.register-button{
+.btn-register {
   display: inline-flex;
 }
 
-.list{
+.primary-nav-list {
   display: flex;
 }
