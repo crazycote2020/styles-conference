@@ -59,12 +59,12 @@ html {
 }
 
 body {
-  background: #293f50;
+  background: white;
   color: #888;
   display: flex;
   flex-direction: column;
   font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 /*
@@ -119,6 +119,8 @@ body {
 
 .group {
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /*
@@ -223,6 +225,9 @@ a:hover {
 p a {
   border-bottom: 1px solid #dfe2e5;
 }
+.primary-header{
+  background: #293f50;
+}
 .primary-header a,
 .primary-footer a {
   color: #fff;
@@ -305,6 +310,7 @@ p a {
 */
 
 .primary-footer {
+  background: #293f50;
   color: #648880;
   display: flex;
   font-size: 14px;
@@ -314,8 +320,9 @@ p a {
   padding-top: 44px;
 }
 .primary-footer small {
-  flex-grow: 1.0;
   font-weight: 400;
+  flex-grow: 1.0;
+  justify-self: start;
 }
 
 /*
@@ -343,10 +350,14 @@ p a {
 */
 
 .hero {
+  background: #293f50;
   color: #fff;
+  display: flex;
+  justify-content: center;
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;
+  width: 100%;
 }
 
 .hero h2 {
@@ -354,8 +365,11 @@ p a {
 }
 
 .hero p {
+  display: flex;
   font-size: 24px;
   font-weight: 100;
+  margin: auto;
+  width: 35%;
 }
 
 .teaser a:hover h3 {
@@ -542,6 +556,18 @@ table h4 {
   display: inline-flex;
 }
 
-.primary-nav-list {
+.header-content{
+  background-color: #293f50;
   display: flex;
+}
+
+.footer-content{
+  background-color: #293f50;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+.hero-content{
+  width: 35%;
 }
