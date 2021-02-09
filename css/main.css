@@ -345,7 +345,7 @@ p a {
 
 .primary-footer small {
   font-weight: 400;
-  flex-grow: 1.0;
+  flex-grow: 1;
   justify-self: start;
   padding-right: 5%;
 }
@@ -357,6 +357,7 @@ p a {
 */
 
 .nav {
+  display: flex;
   text-align: right;
 }
 
@@ -384,7 +385,6 @@ p a {
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;
-  width: 100%;
 }
 
 .hero h2 {
