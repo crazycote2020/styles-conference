@@ -4,8 +4,6 @@
 ========================================
 */
 
-
-
 .logo {
     border-top: 4px solid @font-color-2;
     font-size: 48px;
@@ -56,14 +54,6 @@
 Сетка
 ========================================
 */
-
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 .container,
 .grid {
@@ -147,32 +137,32 @@
     line-height: 33px;
 }
 
-
-
 .primary-header {
     background: @background-color;
 }
 
-.primary-header a,
-.primary-footer a {
+.primary-header,
+.primary-footer {
+    a {
     color: @font-color;
-}
+    }
 
-.primary-header a:hover,
-.primary-footer a:hover {
-    color: @font-color-2;
+    a:hover{
+        color: @font-color-2;
+    }
 }
 
 .menu-item {
     border-bottom: 2px solid transparent;
     transition: 0.25s;
+
+    &:hover{
+        border-color: white;
+        color: @font-color-2;
+        opacity: 1;
+    }
 }
 
-.menu-item:hover {
-    border-color: white;
-    color: @font-color-2;
-    opacity: 1;
-}
 .menu-bar {
     display: inline-flex;
     flex-direction: column;

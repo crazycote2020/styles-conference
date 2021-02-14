@@ -67,7 +67,6 @@ table {
     }
 }
 
-
 /*
 ========================================
 Пользовательские стили
@@ -83,7 +82,7 @@ body {
     color: @grey-col;
     display: flex;
     flex-direction: column;
-    font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 300 16px/22px 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     min-height: 100vh;
 }
 
@@ -176,8 +175,6 @@ p {
     }
 }
 
-
-
 th,
 td {
     padding-bottom: 22px;
@@ -231,8 +228,6 @@ tbody {
     }
 }
 
-
-
 /*
 ========================================
 Кнопки
@@ -255,7 +250,7 @@ tbody {
     padding: 10px 30px;
     transition: 0.25s;
 
-    .btn-alt:hover {
+    &:hover {
         background: @font-color;
         color: @font-color-2;
     }
@@ -268,7 +263,16 @@ tbody {
     font-size: 14px;
     transition: 0.25s;
 
-    :hover {
+    &:hover {
         background: #77a198;
     }
+
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
