@@ -1,40 +1,41 @@
 .hero {
-    background: #293f50;
-    color: #fff;
+    background: @background-color;
+    color: @font-color;
     display: flex;
     justify-content: center;
     line-height: 44px;
     padding: 22px 80px 66px 80px;
     text-align: center;
-}
 
-.hero h2 {
-    font-size: 36px;
-}
+    h2 {
+        font-size: 36px;
+    }
 
-.hero p {
-    font-size: 24px;
-    font-weight: 100;
-    margin: auto;
-    max-width: 100%;
-    width: 800px;
+    p {
+        font-size: 24px;
+        font-weight: 100;
+        margin: auto;
+        max-width: 100%;
+        width: 800px;
+    }
 }
+.teaser {
+    a:hover h3 {
+        color: @font-color-3;
+        transition: 0.25s;
+    }
 
-.teaser a:hover h3 {
-    color: #a9b2b9;
-    transition: 0.25s;
-}
+    img {
+        border-radius: 5px;
+        display: block;
+        margin-bottom: 22px;
+        max-width: 100%;
+        transition: 0.25s;
+    }
 
-.teaser img {
-    border-radius: 5px;
-    display: block;
-    margin-bottom: 22px;
-    max-width: 100%;
-    transition: 0.25s;
-}
-
-.teaser:hover img {
-    opacity: 0.8;
+    :hover img {
+        opacity: 0.8;
+    }
 }
 
 .hero-content {
