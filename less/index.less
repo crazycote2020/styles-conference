@@ -1,6 +1,6 @@
 .hero {
-    background: @background-color;
-    color: @font-color;
+    background: @color-bg-primary;
+    color: @color-primary;
     display: flex;
     justify-content: center;
     line-height: 44px;
@@ -22,7 +22,7 @@
 
 .teaser {
     a:hover h3 {
-        color: @font-color-3;
+        color: @color-text-secondary;
         transition: 0.25s;
     }
 
@@ -34,7 +34,7 @@
         transition: 0.25s;
     }
 
-    :hover img {
+    &:hover img {
         opacity: 0.8;
     }
 }

@@ -1,11 +1,5 @@
-/*
-========================================
-Основной заголовок
-========================================
-*/
-
 .logo {
-    border-top: 4px solid @font-color-2;
+    border-top: 4px solid @color-secondary;
     font-size: 48px;
     font-weight: 100;
     letter-spacing: .5px;
@@ -27,15 +21,9 @@
     text-transform: uppercase;
 }
 
-/*
-========================================
-Основной подвал
-========================================
-*/
-
 .primary-footer {
-    background: @background-color;
-    color: @font-color-2;
+    background: @color-bg-primary;
+    color: @color-secondary;
     font-size: 14px;
     margin-top: auto;
     padding-bottom: 44px;
@@ -49,22 +37,14 @@
     padding-right: 5%;
 }
 
-/*
-========================================
-Сетка
-========================================
-*/
-
 .container,
 .grid {
     margin: 0 auto;
     width: 960px;
 }
 
-.grid-2 {
+.grid {
     display: flex;
-    margin: 0 auto;
-    width: 960px;
 }
 
 .container {
@@ -98,19 +78,13 @@
     width: 100%;
 }
 
-/*
-========================================
-Полосы
-========================================
-*/
-
 .row,
 .row-alt {
     min-width: 960px;
 }
 
 .row {
-    background: @font-color;
+    background: @color-primary;
     padding: 66px 0 44px 0;
 }
 
@@ -122,33 +96,27 @@
     padding: 44px 0 22px 0;
 }
 
-/*
-========================================
-Вступление
-========================================
-*/
-
 .lead {
     text-align: center;
-}
 
-.lead p {
-    font-size: 21px;
-    line-height: 33px;
+    p {
+        font-size: 21px;
+        line-height: 33px;
+    }
 }
 
 .primary-header {
-    background: @background-color;
+    background: @color-bg-primary;
 }
 
 .primary-header,
 .primary-footer {
     a {
-        color: @font-color;
-    }
+        color: @color-primary;
 
-    a:hover{
-        color: @font-color-2;
+        &:hover {
+            color: @color-secondary;
+        }
     }
 }
 
@@ -156,9 +124,9 @@
     border-bottom: 2px solid transparent;
     transition: 0.25s;
 
-    &:hover{
+    &:hover {
         border-color: white;
-        color: @font-color-2;
+        color: @color-secondary;
         opacity: 1;
     }
 }
@@ -170,26 +138,20 @@
 }
 
 .header-content {
-    background-color: @background-color;
+    background: @color-bg-primary;
     display: flex;
 }
 
 .footer-content {
-    background-color: @background-color;
+    background: @color-bg-primary;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 
-/*
-========================================
-Основной заголовок
-========================================
-*/
-
 .logo {
-    border-top: 4px solid @font-color-2;
+    border-top: 4px solid @color-secondary;
     font-size: 48px;
     font-weight: 100;
     letter-spacing: .5px;
@@ -211,12 +173,6 @@
     text-transform: uppercase;
 }
 
-/*
-========================================
-Навигация
-========================================
-*/
-
 .nav {
     display: flex;
     text-align: right;
@@ -225,22 +181,16 @@
         display: inline-flex;
         margin: 0 10px;
         vertical-align: top;
-    }
 
-    li:last-child {
-        margin-right: 0;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
-/*
-========================================
-Кнопки
-========================================
-*/
-
 .btn {
     border-radius: 5px;
-    color: @font-color;
+    color: @color-primary;
     cursor: pointer;
     font-weight: 400;
     flex-grow: 1;
@@ -250,19 +200,19 @@
 }
 
 .btn-alt {
-    border: 1px solid @font-color;
+    border: 1px solid @color-primary;
     padding: 10px 30px;
     transition: 0.25s;
 
     &:hover {
-        background: @font-color;
-        color: @font-color-2;
+        background: @color-primary;
+        color: @color-secondary;
     }
 }
 
 .btn-default {
     border: 0;
-    background: @background-color-2;
+    background: @color-bg-secondary;
     padding: 11px 30px;
     font-size: 14px;
     transition: 0.25s;
@@ -270,5 +220,4 @@
     &:hover {
         background: #77a198;
     }
-
 }
